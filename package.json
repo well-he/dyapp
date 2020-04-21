@@ -7,9 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
+    "babel-runtime": "^6.26.0",
+    "core-js": "^3.6.5",
+    "swiper": "^5.3.7",
+    "tsml": "^1.0.1",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.1.6",
+    "vue-video-player": "^5.0.2",
     "vuex": "^3.1.3"
   },
   "devDependencies": {

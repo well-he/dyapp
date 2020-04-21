@@ -57,7 +57,7 @@ export default {
   height: 50px;
   line-height: 50px;
   width: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -65,6 +65,7 @@ export default {
   font-style: 16px;
   display: flex;
   justify-items: center;
+  z-index: 999;
 }
 .tab-bar .item {
   flex: 1;
