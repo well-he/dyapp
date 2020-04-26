@@ -1,6 +1,6 @@
 <template>
   <div class="videos">
-    <video-player class="video-player vjs-custom-skin"
+    <video-player class="video-player vjs-default-skin vjs-big-play-centered"
                   ref="videoPlayer"
                   :playsinline="true"
                   :options="playerOptions"></video-player>
@@ -75,15 +75,18 @@ export default {
 .videos {
   position: relative;
 }
-.videos .vjs-custom-skin > .video-js .vjs-big-play-button {
+.videos .vjs-default-skin > .video-js .vjs-big-play-button {
   background: rgba(0, 0, 0, 0.4);
-  font-size: 30px;
+  /* font-size: 30px; */
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  line-height: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 0;
+  margin-left: 0;
 }
 </style>

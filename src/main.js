@@ -8,6 +8,7 @@ import './static/iconfont/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 //引入视频播放组件
+import 'vue-video-player/src/custom-theme.css'
 import 'video.js/dist/video-js.css'
 
 Vue.config.productionTip = false
