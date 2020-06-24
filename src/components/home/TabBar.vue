@@ -1,55 +1,63 @@
+<!--
+ * @Author: Well He
+ * @Date: 2020-04-21 18:22:50
+ * @LastEditTime: 2020-06-24 21:57:57
+ * @LastEditors: Well He
+ * @Description: i'm busy
+--> 
 <template>
   <div class="tab-bar">
-    <div class="item"
-         @click="changeTab(0)">
-      <router-link tag="span"
-                   to="/index"
-                   :class="tabIndex==0?'active':''">
+    <div class="item" @click="changeTab(0)">
+      <router-link
+        tag="span"
+        to="/index"
+        :class="tabIndex == 0 ? 'active' : ''"
+      >
         首页
       </router-link>
     </div>
-    <div class="item"
-         @click="changeTab(1)">
-      <router-link tag="span"
-                   to="/follow"
-                   :class="tabIndex==1?'active':''">
+    <div class="item" @click="changeTab(1)">
+      <router-link
+        tag="span"
+        to="/follow"
+        :class="tabIndex == 1 ? 'active' : ''"
+      >
         熟人
       </router-link>
     </div>
-    <div class="item"
-         @click="changeTab(2)">
-      <router-link tag="span"
-                   to="/index"
-                   :class="tabIndex==2?'active':''"
-                   class="addbtn">
+    <div class="item" @click="changeTab(2)">
+      <router-link
+        tag="span"
+        to="/index"
+        :class="tabIndex == 2 ? 'active' : ''"
+        class="addbtn"
+      >
         +
       </router-link>
     </div>
-    <div class="item"
-         @click="changeTab(3)">
-      <span :class="tabIndex==3?'active':''"> 消息 </span>
+    <div class="item" @click="changeTab(3)">
+      <span :class="tabIndex == 3 ? 'active' : ''"> 消息 </span>
     </div>
-    <div class="item"
-         @click="changeTab(4)">
-      <span :class="tabIndex==4?'active':''">我</span>
+    <div class="item" @click="changeTab(4)">
+      <span :class="tabIndex == 4 ? 'active' : ''">我</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TabBar",
+  name: 'TabBar',
   data() {
     return {
-      tabIndex: 0
-    }
+      tabIndex: 0,
+    };
   },
   methods: {
     changeTab(index) {
-      this.tabIndex = index
-    }
-  }
-}
+      this.tabIndex = index;
+    },
+  },
+};
 </script>
 
 <style scoped>

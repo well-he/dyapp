@@ -1,4 +1,4 @@
-<template>
+<template>  
   <div class="videos">
     <video-player class="video-player vjs-default-skin vjs-big-play-centered"
                   ref="videoPlayer"
